@@ -1,4 +1,5 @@
-<<<<<<< HEAD
+# mizan-ai-backend-strapi
+
 # Strapi Docker Setup
 
 This is a fully automated Strapi CMS setup with PostgreSQL database running in Docker containers.
@@ -60,11 +61,11 @@ On first access, you'll be prompted to create an admin user.
 
 All data is persisted to your local machine:
 
-- **Strapi Application:** `C:\Personal\Projects\strapi_docker\Volumes\app`
+- **Strapi Application:** `./Volumes/app`
   - This contains your entire Strapi project
   - You can edit files here and changes will reflect in the container
 
-- **PostgreSQL Data:** `C:\Personal\Projects\strapi_docker\Volumes\postgres-data`
+- **PostgreSQL Data:** `./Volumes/postgres-data`
   - This contains your database files
 
 ## Useful Commands
@@ -112,7 +113,7 @@ docker exec -it strapi sh
 ## Development Workflow
 
 1. Start containers: `docker-compose up`
-2. Edit files in: `C:\Personal\Projects\strapi_docker\Volumes\app`
+2. Edit files in: `./Volumes/app`
 3. Changes auto-reload in Strapi
 4. Create content types via admin panel
 5. Access your API at http://localhost:5000/api
@@ -127,7 +128,7 @@ docker exec -it strapi sh
 - Change ports in docker-compose.yml (5000:1337 or 5432:5432)
 
 **Permission issues:**
-- Ensure Docker has access to C:\Personal\Projects directory
+- Ensure Docker has access to your project directory
 
 **Database connection errors:**
 - Ensure strapiDB container is running: `docker ps`
@@ -139,6 +140,3 @@ docker exec -it strapi sh
 - For production, use different Dockerfile and secure credentials
 - The entrypoint script automatically handles initialization
 - Node modules are installed inside the container
-=======
-# mizan-ai-backend-strapi
->>>>>>> eb8040090bad2a020a6a2324efd52ddc857256ae
