@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Strapi Docker Setup
 
 This is a fully automated Strapi CMS setup with PostgreSQL database running in Docker containers.
@@ -138,3 +139,6 @@ docker exec -it strapi sh
 - For production, use different Dockerfile and secure credentials
 - The entrypoint script automatically handles initialization
 - Node modules are installed inside the container
+=======
+# mizan-ai-backend-strapi
+>>>>>>> eb8040090bad2a020a6a2324efd52ddc857256ae
